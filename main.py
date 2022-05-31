@@ -13,7 +13,6 @@ https://trello.com/app-key
 
 def main():
     teams = (
-
     {
         'pm': 'Толстоногов Алексей',
         'pm_color': 'green',
