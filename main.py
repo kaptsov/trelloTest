@@ -1,8 +1,9 @@
-import requests
 import json
-from dotenv import load_dotenv
 import os
 from os.path import join, dirname
+
+import requests
+from dotenv import load_dotenv
 
 '''
 Свои ключи генерируются тут:
