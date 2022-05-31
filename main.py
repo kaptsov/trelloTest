@@ -113,6 +113,26 @@ def create_trello(teams, project_name, project_start_date, project_end_date):
             params=query
         )
 
+        url = f"https://api.trello.com/1/boards/{board['id']}/lists"
+
+        headers = {
+            "Accept": "application/json"
+        }
+
+        query = {
+            'name': 'Архив',
+            'pos': 'bottom',
+            'key': API_KEY,
+            'token': TOKEN
+        }
+
+        response = requests.request(
+            "POST",
+            url,
+            headers=headers,
+            params=query
+        )
+
     return True
 
 
